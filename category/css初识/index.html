@@ -14,6 +14,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -79,16 +86,18 @@
 
 
 
-<meta name="description" content="因为你不会，所以你才会">
+<meta name="description" content="css层叠样式表 (cascading style sheets)1. 引入css样式表（书写位置）1.1 行内式（内联样式）1&lt;标签名 style&#x3D;&quot;属性1:属性值1; 属性2:属性值2; 属性3:属性值3;&quot;&gt;文本&lt;&#x2F;标签名&gt;  缺点：没有实现样式和结构相分离 1.2 内部样式表（内嵌样式表）123456789101112131415&lt;head&gt;    &amp;l">
 <meta property="og:type" content="article">
-<meta property="og:title" content="article title">
-<meta property="og:url" content="http://cfhyxxj.top/2020/04/07/article-title/index.html">
+<meta property="og:title" content="css初识">
+<meta property="og:url" content="http://cfhyxxj.top/category/css%E5%88%9D%E8%AF%86/index.html">
 <meta property="og:site_name" content="春风化雨的博客">
-<meta property="og:description" content="因为你不会，所以你才会">
-<meta property="article:published_time" content="2020-04-07T05:03:58.000Z">
-<meta property="article:modified_time" content="2020-04-07T05:03:58.620Z">
+<meta property="og:description" content="css层叠样式表 (cascading style sheets)1. 引入css样式表（书写位置）1.1 行内式（内联样式）1&lt;标签名 style&#x3D;&quot;属性1:属性值1; 属性2:属性值2; 属性3:属性值3;&quot;&gt;文本&lt;&#x2F;标签名&gt;  缺点：没有实现样式和结构相分离 1.2 内部样式表（内嵌样式表）123456789101112131415&lt;head&gt;    &amp;l">
+<meta property="og:image" content="http://cfhyxxj.top/category/css%E5%88%9D%E8%AF%86/media/%E5%A4%96%E9%93%BE%E5%BC%8F.jpg">
+<meta property="article:published_time" content="2020-04-07T05:05:42.043Z">
+<meta property="article:modified_time" content="2020-03-18T12:27:20.880Z">
 <meta property="article:author" content="春风化雨">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://cfhyxxj.top/category/css%E5%88%9D%E8%AF%86/media/%E5%A4%96%E9%93%BE%E5%BC%8F.jpg">
 
 
 
@@ -98,7 +107,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -118,7 +127,7 @@
 
 
 
-  <link rel="canonical" href="http://cfhyxxj.top/2020/04/07/article-title/"/>
+  <link rel="canonical" href="http://cfhyxxj.top/category/css初识/"/>
 
 
 
@@ -126,7 +135,7 @@
 
 
 
-  <title>article title | 春风化雨的博客</title>
+  <title>css初识 | 春风化雨的博客</title>
   
 
 
@@ -307,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://cfhyxxj.top/2020/04/07/article-title/">
+    <link itemprop="mainEntityOfPage" href="http://cfhyxxj.top/category/css%E5%88%9D%E8%AF%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="春风化雨">
@@ -324,7 +333,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">article title</h1>
+          <h1 class="post-title" itemprop="name headline">css初识</h1>
         
 
         <div class="post-meta">
@@ -336,13 +345,25 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-07T13:03:58+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-07T13:05:42+08:00">
                 2020-04-07
               </time>
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2020-03-18T20:27:20+08:00">
+                2020-03-18
+              </time>
             
           </span>
 
@@ -357,6 +378,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  473
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
           
 
           
@@ -374,7 +426,76 @@
       
 
       
-        
+        <h2 id="css层叠样式表-cascading-style-sheets"><a href="#css层叠样式表-cascading-style-sheets" class="headerlink" title="css层叠样式表 (cascading style sheets)"></a>css层叠样式表 (cascading style sheets)</h2><h3 id="1-引入css样式表（书写位置）"><a href="#1-引入css样式表（书写位置）" class="headerlink" title="1. 引入css样式表（书写位置）"></a>1. 引入css样式表（书写位置）</h3><h4 id="1-1-行内式（内联样式）"><a href="#1-1-行内式（内联样式）" class="headerlink" title="1.1 行内式（内联样式）"></a>1.1 行内式（内联样式）</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">标签名</span> <span class="attr">style</span>=<span class="string">"属性1:属性值1; 属性2:属性值2; 属性3:属性值3;"</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">标签名</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>缺点：没有实现样式和结构相分离</p>
+<h4 id="1-2-内部样式表（内嵌样式表）"><a href="#1-2-内部样式表（内嵌样式表）" class="headerlink" title="1.2 内部样式表（内嵌样式表）"></a>1.2 内部样式表（内嵌样式表）</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/CSS"</span>&gt;</span></span><br><span class="line">	选择器1</span><br><span class="line">    &#123;</span><br><span class="line">        属性1：属性值1</span><br><span class="line">        属性2：属性值2</span><br><span class="line">    &#125;</span><br><span class="line">    选择器2</span><br><span class="line">    &#123;</span><br><span class="line">        属性1：属性值1</span><br><span class="line">        属性2：属性值2</span><br><span class="line">    &#125;</span><br><span class="line">    ...    </span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<ul>
+<li>style标签一般位于head标签中，当然理论上它可以放在html文档的任何地方</li>
+<li>html5可以省略type=”text/CSS”</li>
+<li>只能控制当前页面</li>
+</ul>
+<p>缺点：没有实现结构和样式彻底分离</p>
+<h4 id="1-3-外部样式表（外链式）"><a href="#1-3-外部样式表（外链式）" class="headerlink" title="1.3 外部样式表（外链式）"></a>1.3 外部样式表（外链式）</h4><p>是将所有的样式放在以.css为扩展名的外部样式文件中，通过link标签链接到html文件中</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"sytlesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">href</span>=<span class="string">"css文件路径"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">rel</td>
+<td align="center">定义当前文档与所链接文档的关系</td>
+</tr>
+<tr>
+<td align="center">type</td>
+<td align="center">定义所链接的文件类型，type=”text/css含义：所链接的是css样式文件，一般我们可以省略</td>
+</tr>
+<tr>
+<td align="center">href</td>
+<td align="center">定义所链接的外部样式文件的url，可以是相对地址，也可以是绝对地址</td>
+</tr>
+</tbody></table>
+<img src="media/外链式.jpg">
+
+<h4 id="1-4-三种样式表比较"><a href="#1-4-三种样式表比较" class="headerlink" title="1.4 三种样式表比较"></a>1.4 三种样式表比较</h4><table>
+<thead>
+<tr>
+<th align="center">样式表</th>
+<th align="center">优点</th>
+<th align="center">缺点</th>
+<th align="center">使用情况</th>
+<th align="center">控制范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">行内样式表</td>
+<td align="center">书写方便，权重高</td>
+<td align="center">没有实现结构和样式的分离</td>
+<td align="center">较少</td>
+<td align="center">控制一个标签</td>
+</tr>
+<tr>
+<td align="center">内部样式表</td>
+<td align="center">部分结构和样式的分离</td>
+<td align="center">没有彻底分离</td>
+<td align="center">较多</td>
+<td align="center">控制一个页面</td>
+</tr>
+<tr>
+<td align="center">外部样式表</td>
+<td align="center">完全实现结构和样式的分离</td>
+<td align="center">需要link下</td>
+<td align="center">最多，强烈推荐</td>
+<td align="center">控制整个站点</td>
+</tr>
+</tbody></table>
+
       
     </div>
     
@@ -398,8 +519,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/04/07/guestbook/" rel="next" title="guestbook">
-                <i class="fa fa-chevron-left"></i> guestbook
+              <a href="/category/article-title/" rel="next" title="article title">
+                <i class="fa fa-chevron-left"></i> article title
               </a>
             
           </div>
@@ -407,10 +528,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/04/07/css%E5%88%9D%E8%AF%86/" rel="prev" title="css初识">
-                css初识 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -462,8 +579,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -497,6 +623,22 @@
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/charryglomc" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:798577670@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
 
           
           
@@ -509,6 +651,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#css层叠样式表-cascading-style-sheets"><span class="nav-number">1.</span> <span class="nav-text">css层叠样式表 (cascading style sheets)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-引入css样式表（书写位置）"><span class="nav-number">1.1.</span> <span class="nav-text">1. 引入css样式表（书写位置）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-行内式（内联样式）"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1 行内式（内联样式）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-内部样式表（内嵌样式表）"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2 内部样式表（内嵌样式表）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-外部样式表（外链式）"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3 外部样式表（外链式）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-三种样式表比较"><span class="nav-number">1.1.4.</span> <span class="nav-text">1.4 三种样式表比较</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -530,18 +688,21 @@
   <span class="author" itemprop="copyrightHolder">春风化雨</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">546</span>
+  
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
@@ -561,6 +722,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -1033,6 +1196,7 @@
   
 
   <script type="text/javascript" src="/js/src/sakura.js"></script>
-  
+  <script type="text/javascript" src="/lib/clipboard/clipboard.js"></script>
+<script type="text/javascript" src="/js/src/custom.js"></script>
 </body>
 </html>

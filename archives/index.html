@@ -14,6 +14,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -96,7 +103,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -328,7 +335,7 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2020/04/07/css%E5%88%9D%E8%AF%86/" itemprop="url">
+            <a class="post-title-link" href="/category/css%E5%88%9D%E8%AF%86/" itemprop="url">
               
                 <span itemprop="name">css初识</span>
               
@@ -365,7 +372,7 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2020/04/07/article-title/" itemprop="url">
+            <a class="post-title-link" href="/category/article-title/" itemprop="url">
               
                 <span itemprop="name">article title</span>
               
@@ -402,7 +409,7 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2020/04/07/guestbook/" itemprop="url">
+            <a class="post-title-link" href="/category/guestbook/" itemprop="url">
               
                 <span itemprop="name">guestbook</span>
               
@@ -439,7 +446,7 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2020/04/06/hello-world/" itemprop="url">
+            <a class="post-title-link" href="/category/hello-world/" itemprop="url">
               
                 <span itemprop="name">Hello World</span>
               
@@ -532,6 +539,22 @@
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/charryglomc" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:798577670@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
 
           
           
@@ -565,18 +588,21 @@
   <span class="author" itemprop="copyrightHolder">春风化雨</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">546</span>
+  
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
@@ -596,6 +622,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -1064,6 +1092,7 @@
   
 
   <script type="text/javascript" src="/js/src/sakura.js"></script>
-  
+  <script type="text/javascript" src="/lib/clipboard/clipboard.js"></script>
+<script type="text/javascript" src="/js/src/custom.js"></script>
 </body>
 </html>
