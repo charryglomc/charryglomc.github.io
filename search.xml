@@ -23,4 +23,83 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>article title</title>
+    <url>/2020/04/07/article-title/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>css初识</title>
+    <url>/2020/04/07/css%E5%88%9D%E8%AF%86/</url>
+    <content><![CDATA[<h2 id="css层叠样式表-cascading-style-sheets"><a href="#css层叠样式表-cascading-style-sheets" class="headerlink" title="css层叠样式表 (cascading style sheets)"></a>css层叠样式表 (cascading style sheets)</h2><h3 id="1-引入css样式表（书写位置）"><a href="#1-引入css样式表（书写位置）" class="headerlink" title="1. 引入css样式表（书写位置）"></a>1. 引入css样式表（书写位置）</h3><h4 id="1-1-行内式（内联样式）"><a href="#1-1-行内式（内联样式）" class="headerlink" title="1.1 行内式（内联样式）"></a>1.1 行内式（内联样式）</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">标签名</span> <span class="attr">style</span>=<span class="string">"属性1:属性值1; 属性2:属性值2; 属性3:属性值3;"</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">标签名</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>缺点：没有实现样式和结构相分离</p>
+<h4 id="1-2-内部样式表（内嵌样式表）"><a href="#1-2-内部样式表（内嵌样式表）" class="headerlink" title="1.2 内部样式表（内嵌样式表）"></a>1.2 内部样式表（内嵌样式表）</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/CSS"</span>&gt;</span></span><br><span class="line">	选择器1</span><br><span class="line">    &#123;</span><br><span class="line">        属性1：属性值1</span><br><span class="line">        属性2：属性值2</span><br><span class="line">    &#125;</span><br><span class="line">    选择器2</span><br><span class="line">    &#123;</span><br><span class="line">        属性1：属性值1</span><br><span class="line">        属性2：属性值2</span><br><span class="line">    &#125;</span><br><span class="line">    ...    </span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<ul>
+<li>style标签一般位于head标签中，当然理论上它可以放在html文档的任何地方</li>
+<li>html5可以省略type=”text/CSS”</li>
+<li>只能控制当前页面</li>
+</ul>
+<p>缺点：没有实现结构和样式彻底分离</p>
+<h4 id="1-3-外部样式表（外链式）"><a href="#1-3-外部样式表（外链式）" class="headerlink" title="1.3 外部样式表（外链式）"></a>1.3 外部样式表（外链式）</h4><p>是将所有的样式放在以.css为扩展名的外部样式文件中，通过link标签链接到html文件中</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"sytlesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">href</span>=<span class="string">"css文件路径"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">rel</td>
+<td align="center">定义当前文档与所链接文档的关系</td>
+</tr>
+<tr>
+<td align="center">type</td>
+<td align="center">定义所链接的文件类型，type=”text/css含义：所链接的是css样式文件，一般我们可以省略</td>
+</tr>
+<tr>
+<td align="center">href</td>
+<td align="center">定义所链接的外部样式文件的url，可以是相对地址，也可以是绝对地址</td>
+</tr>
+</tbody></table>
+<img src="media/外链式.jpg">
+
+<h4 id="1-4-三种样式表比较"><a href="#1-4-三种样式表比较" class="headerlink" title="1.4 三种样式表比较"></a>1.4 三种样式表比较</h4><table>
+<thead>
+<tr>
+<th align="center">样式表</th>
+<th align="center">优点</th>
+<th align="center">缺点</th>
+<th align="center">使用情况</th>
+<th align="center">控制范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">行内样式表</td>
+<td align="center">书写方便，权重高</td>
+<td align="center">没有实现结构和样式的分离</td>
+<td align="center">较少</td>
+<td align="center">控制一个标签</td>
+</tr>
+<tr>
+<td align="center">内部样式表</td>
+<td align="center">部分结构和样式的分离</td>
+<td align="center">没有彻底分离</td>
+<td align="center">较多</td>
+<td align="center">控制一个页面</td>
+</tr>
+<tr>
+<td align="center">外部样式表</td>
+<td align="center">完全实现结构和样式的分离</td>
+<td align="center">需要link下</td>
+<td align="center">最多，强烈推荐</td>
+<td align="center">控制整个站点</td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
 </search>
