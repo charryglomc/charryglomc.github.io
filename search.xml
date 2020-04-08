@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>article title</title>
-    <url>/category/article-title/</url>
+    <title>css</title>
+    <url>/category/css/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>css初识</title>
+    <title>CSS初识</title>
     <url>/category/css%E5%88%9D%E8%AF%86/</url>
     <content><![CDATA[<h2 id="css层叠样式表-cascading-style-sheets"><a href="#css层叠样式表-cascading-style-sheets" class="headerlink" title="css层叠样式表 (cascading style sheets)"></a>css层叠样式表 (cascading style sheets)</h2><h3 id="1-引入css样式表（书写位置）"><a href="#1-引入css样式表（书写位置）" class="headerlink" title="1. 引入css样式表（书写位置）"></a>1. 引入css样式表（书写位置）</h3><h4 id="1-1-行内式（内联样式）"><a href="#1-1-行内式（内联样式）" class="headerlink" title="1.1 行内式（内联样式）"></a>1.1 行内式（内联样式）</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">标签名</span> <span class="attr">style</span>=<span class="string">"属性1:属性值1; 属性2:属性值2; 属性3:属性值3;"</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">标签名</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -78,6 +78,17 @@
 </tr>
 </tbody></table>
 ]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>article title</title>
+    <url>/category/article-title/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>guestbook</title>
