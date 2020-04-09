@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>创建音乐和歌单</title>
+    <url>/category/%E5%88%9B%E5%BB%BA%E9%9F%B3%E4%B9%90%E5%92%8C%E6%AD%8C%E5%8D%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-进入网易云音乐（网页版）点击"><a href="#1-进入网易云音乐（网页版）点击" class="headerlink" title="1. 进入网易云音乐（网页版）点击"></a>1. 进入网易云音乐（网页版）<a href="https://music.163.com/" target="_blank" rel="noopener">点击</a></h2><ul>
+<li>获取音乐id</li>
+</ul>
+<h2 id="2-获取网易云音乐url"><a href="#2-获取网易云音乐url" class="headerlink" title="2. 获取网易云音乐url"></a>2. 获取网易云音乐url</h2><p>将id替换到下面链接里</p>
+<figure class="highlight awk"><table><tbody><tr><td class="code"><pre><span class="line">http:<span class="regexp">//mu</span>sic.<span class="number">163</span>.com<span class="regexp">/song/m</span>edia<span class="regexp">/outer/u</span>rl?id=<span class="number">461080452</span>.mp3</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="3-获取音乐封面-点击"><a href="#3-获取音乐封面-点击" class="headerlink" title="3. 获取音乐封面 点击"></a>3. 获取音乐封面 <a href="https://dev.yii2.cc/cover" target="_blank" rel="noopener">点击</a></h2><ul>
+<li>放在blog/source/media 文件夹里</li>
+<li>博客文章当前路径是在blog/source/</li>
+</ul>
+<h2 id="4-创建音乐外链"><a href="#4-创建音乐外链" class="headerlink" title="4. 创建音乐外链"></a>4. 创建音乐外链</h2><figure class="highlight gcode"><table><tbody><tr><td class="code"><pre><span class="line">{<span class="meta">%</span> aplayer <span class="string">"五月雨"</span> <span class="string">"高梨康治"</span> <span class="string">"http://m10.music.126.net/20200409153934/619d54dcd5398a74d8536875729c05ad/ymusic/d741/ca68/da8c/f6110877fc505a5c4c9a2a1de92a9dc1.mp3"</span> <span class="string">"/media/wyy.jpg"</span> <span class="meta">%</span>}</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>注意</strong>：<code>直接写</code>，不像这里一样写在代码块里</p>
+<h2 id="5-创建音乐歌单"><a href="#5-创建音乐歌单" class="headerlink" title="5. 创建音乐歌单"></a>5. 创建音乐歌单</h2><figure class="highlight clojure"><table><tbody><tr><td class="code"><pre><span class="line">{% aplayerlist %}{<span class="string">"narrow"</span>: <span class="literal">false</span>,<span class="string">"autoplay"</span>: <span class="literal">true</span>,<span class="string">"showlrc"</span>: <span class="number">3</span>,<span class="string">"mode"</span>: <span class="string">"random"</span>,<span class="string">"music"</span>: [{<span class="string">"title"</span>: <span class="string">"五月雨"</span>,<span class="string">"author"</span>: <span class="string">"高梨康治"</span>,<span class="string">"url"</span>: <span class="string">"http://m10.music.126.net/20200409153934/619d54dcd5398a74d8536875729c05ad/ymusic/d741/ca68/da8c/f6110877fc505a5c4c9a2a1de92a9dc1.mp3"</span>,<span class="string">"pic"</span>: <span class="string">"/media/wyy.jpg"</span>},{<span class="string">"title"</span>: <span class="string">"认真地老去"</span>,<span class="string">"author"</span>: <span class="string">"张希&nbsp;/&nbsp;曹方"</span>,<span class="string">"url"</span>: <span class="string">"http://music.163.com/song/media/outer/url?id=461080452.mp3"</span>,<span class="string">"pic"</span>: <span class="string">"/media/rzdlq.jpg"</span>}]}{% endaplayerlist %}</span><br></pre></td></tr></tbody></table></figure>
+
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <categories>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>列表和表单</title>
     <url>/category/%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/</url>
-    <content><![CDATA[<figure class="highlight subunit"><table><tbody><tr><td class="code"><pre><span class="line">layout:     post</span><br><span class="line">title:      列表和表单</span><br><span class="line">date:       2020<span class="string">-03</span><span class="string">-17</span></span><br><span class="line">author:     春风化雨</span><br><span class="line"><span class="keyword">tags:</span></span><br><span class="line">   - html 列表和表单 </span><br><span class="line">   - html02</span><br></pre></td></tr></tbody></table></figure>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><figure class="highlight subunit"><table><tbody><tr><td class="code"><pre><span class="line">layout:     post</span><br><span class="line">title:      列表和表单</span><br><span class="line">date:       2020<span class="string">-03</span><span class="string">-17</span></span><br><span class="line">author:     春风化雨</span><br><span class="line"><span class="keyword">tags:</span></span><br><span class="line">   - html 列表和表单 </span><br><span class="line">   - html02</span><br></pre></td></tr></tbody></table></figure>
 
 
 
@@ -153,7 +197,7 @@
   <entry>
     <title>表格table</title>
     <url>/category/%E8%A1%A8%E6%A0%BCtable/</url>
-    <content><![CDATA[<h2 id="1-创建表格"><a href="#1-创建表格" class="headerlink" title="1. 创建表格"></a>1. 创建表格</h2><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        ...</span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-创建表格"><a href="#1-创建表格" class="headerlink" title="1. 创建表格"></a>1. 创建表格</h2><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        ...</span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
 
 <ul>
 <li>table:表格标签</li>
@@ -268,7 +312,7 @@
   <entry>
     <title>html常用标签</title>
     <url>/category/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<h1 id="1-html常用标签"><a href="#1-html常用标签" class="headerlink" title="1. html常用标签"></a>1. html常用标签</h1><h2 id="1-1-排版标签"><a href="#1-1-排版标签" class="headerlink" title="1.1 排版标签"></a>1.1 排版标签</h2><h3 id="1）标题标签：共6种"><a href="#1）标题标签：共6种" class="headerlink" title="1）标题标签：共6种"></a>1）标题标签：共6种</h3><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-html常用标签"><a href="#1-html常用标签" class="headerlink" title="1. html常用标签"></a>1. html常用标签</h1><h2 id="1-1-排版标签"><a href="#1-1-排版标签" class="headerlink" title="1.1 排版标签"></a>1.1 排版标签</h2><h3 id="1）标题标签：共6种"><a href="#1）标题标签：共6种" class="headerlink" title="1）标题标签：共6种"></a>1）标题标签：共6种</h3><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
 
 <h3 id="2）段落标签：paragraph段落"><a href="#2）段落标签：paragraph段落" class="headerlink" title="2）段落标签：paragraph段落"></a>2）段落标签：paragraph段落</h3><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span> 内容 <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
 
@@ -410,7 +454,7 @@
   <entry>
     <title>认识html</title>
     <url>/category/%E8%AE%A4%E8%AF%86html/</url>
-    <content><![CDATA[<h2 id="1-html初识"><a href="#1-html初识" class="headerlink" title="1. html初识"></a>1. html初识</h2><ul>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-html初识"><a href="#1-html初识" class="headerlink" title="1. html初识"></a>1. html初识</h2><ul>
 <li><p>html指的是超文本标记语言</p>
 </li>
 <li><p>网页元素用<code>html标签</code>描述出来</p>
@@ -517,7 +561,7 @@
   <entry>
     <title>认识web</title>
     <url>/category/%E8%AE%A4%E8%AF%86web/</url>
-    <content><![CDATA[<h2 id="1-WEB-网页"><a href="#1-WEB-网页" class="headerlink" title="1. WEB(网页)"></a>1. WEB(网页)</h2><ul>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-WEB-网页"><a href="#1-WEB-网页" class="headerlink" title="1. WEB(网页)"></a>1. WEB(网页)</h2><ul>
 <li>网页由各种元素组成，包括音频，视频等</li>
 </ul>
 <h2 id="2-浏览器（显示代码）"><a href="#2-浏览器（显示代码）" class="headerlink" title="2. 浏览器（显示代码）"></a>2. 浏览器（显示代码）</h2><ul>
@@ -583,14 +627,14 @@
         <category>html01</category>
       </categories>
       <tags>
-        <tag>web</tag>
         <tag>html</tag>
+        <tag>web</tag>
       </tags>
   </entry>
   <entry>
     <title>pat</title>
     <url>/category/pat%E5%88%B7%E9%A2%98%E5%BF%83%E5%BE%97/</url>
-    <content><![CDATA[<blockquote>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
 <h3 id="1001"><a href="#1001" class="headerlink" title="1001"></a><code>1001</code></h3></blockquote>
 <p><code>to_string</code>函数是c++11标准引进的，包含在std命名空间中，<code>using namespace std</code>即可了，所以很多老版的ide如dev c++,code blocks里用是会报错了，可以进入setting里compiler调加c++11标准</p>
 <blockquote>
@@ -707,7 +751,7 @@
   <entry>
     <title>typedef struct与struct区别</title>
     <url>/category/typedef-struct%E4%B8%8Estruct%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[<h2 id="typedef"><a href="#typedef" class="headerlink" title="typedef"></a>typedef</h2><p><code>typedef struct</code>一般用于c语言</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="typedef"><a href="#typedef" class="headerlink" title="typedef"></a>typedef</h2><p><code>typedef struct</code>一般用于c语言</p>
 <p>如：</p>
 <figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">typdef <span class="class"><span class="keyword">struct</span> <span class="title">Student</span>{</span></span><br><span class="line">	<span class="keyword">int</span> num；</span><br><span class="line">}Stu;</span><br></pre></td></tr></tbody></table></figure>
 
@@ -751,13 +795,33 @@
   <entry>
     <title>雨</title>
     <url>/category/%E9%9B%A8/</url>
-    <content><![CDATA[<h3 id="健康"><a href="#健康" class="headerlink" title="健康"></a>健康</h3><p>最近感冒一直没好</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="健康"><a href="#健康" class="headerlink" title="健康"></a>健康</h3><p>最近感冒一直没好</p>
 <p>没适应没有暖气的<a href="https://baike.baidu.com/item/%E5%AE%89%E9%99%86/746007?fr=aladdin" target="_blank" rel="noopener"><strong>家</strong></a></p>
 <p>也许只有在生病的时候</p>
 <p>才能体会到健康的重要性</p>
 <h3 id="新年愿"><a href="#新年愿" class="headerlink" title="新年愿"></a>新年愿</h3><p>一愿：自己，家人，爱的人身体健康</p>
 <p>二愿：能一起考上那所学校</p>
-<h3 id="最近在听的一首歌"><a href="#最近在听的一首歌" class="headerlink" title="最近在听的一首歌"></a>最近在听的一首歌</h3><figure class="highlight xml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">id</span>=<span class="string">"audio"</span> <span class="attr">controls</span>=<span class="string">""</span> <span class="attr">preload</span>=<span class="string">"none"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">source</span> <span class="attr">id</span>=<span class="string">"mp3"</span> <span class="attr">src</span>=<span class="string">"http://music.163.com/song/media/outer/url?id=461080452.mp3"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="最近在听的一首歌"><a href="#最近在听的一首歌" class="headerlink" title="最近在听的一首歌"></a>最近在听的一首歌</h3>
+        <div id="aplayer-vSSyghMP" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-vSSyghMP"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "认真地老去",
+              author: "张希 / 曹方",
+              url: "http://music.163.com/song/media/outer/url?id=461080452.mp3",
+              pic: "/media/rzdlq.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
 
 <p>别错过年轻的疯狂</p>
 <p>时光很匆忙</p>
@@ -796,7 +860,7 @@
   <entry>
     <title>Android项目目录结构解析</title>
     <url>/category/Android%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E8%A7%A3%E6%9E%90/</url>
-    <content><![CDATA[<blockquote>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
 <p>eclipse总是出现莫名其妙的bug，于是改投向Android Studio的怀抱</p>
 </blockquote>
 <h2 id="Android项目根目录"><a href="#Android项目根目录" class="headerlink" title="Android项目根目录"></a>Android项目根目录</h2><p><a href="https://i.loli.net/2019/02/23/5c716c663de09.png" target="_blank" rel="noopener"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://i.loli.net/2019/02/23/5c716c663de09.png" alt="1.png"></a></p>
@@ -918,7 +982,7 @@
   <entry>
     <title>markdown基本语法</title>
     <url>/category/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><p>总共六级标题，在#后面要有一个空格</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><p>总共六级标题，在#后面要有一个空格</p>
 <figure class="highlight clean"><table><tbody><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></tbody></table></figure>
 
 <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="2-列表"><a href="#2-列表" class="headerlink" title="2.列表"></a>2.列表</h2><p>无序列表每一行前面加上*或-，符号与文字之间要加一个空格</p>
